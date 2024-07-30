@@ -1,0 +1,45 @@
+.bill {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  &_label {
+    font-weight: 700;
+    font-size: 16px;
+    color: #5e7a7d;
+  }
+
+  &_input {
+    border-radius: 5px;
+    background-color: #f3f9fa;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 6px 17px;
+    align-items: center;
+    border: 2px solid transparent;
+
+    &:has(input[name="bill"]:focus) {
+      border: 2px solid #26c2ae;
+    }
+
+    input {
+      border: 0;
+      outline: none;
+      background: transparent;
+      font-size: 24px;
+      font-weight: 700;
+      color: #00474b;
+      direction: rtl;
+
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
+
+      &:placeholder-shown {
+        color: #00474b;
+        opacity: 0.35;
+      }
+    }
+  }
+}
