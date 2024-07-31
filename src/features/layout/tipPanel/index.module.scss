@@ -1,0 +1,18 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  &_title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #5e7a7d;
+  }
+
+  &_panel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 14px;
+    grid-row-gap: 16px;
+  }
+}

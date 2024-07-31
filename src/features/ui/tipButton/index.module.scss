@@ -1,0 +1,32 @@
+.root {
+  border-radius: 5px;
+  background-color: #00474b;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  transition: all ease-in-out 0.3s;
+
+  .title {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    transition: all ease-in-out 0.3s;
+  }
+
+  &.active {
+    background-color: #26c2ae;
+
+    & > .title {
+      color: #00474b;
+    }
+  }
+
+  &:hover {
+    background-color: #9fe8df;
+
+    & > .title {
+      color: #00474b;
+    }
+  }
+}
