@@ -44,6 +44,7 @@ const TipPanel = () => {
             ari-label={`Tip ${button.value}%`}
           />
         ))}
+        <CustomInput />
       </div>
     </div>
   );

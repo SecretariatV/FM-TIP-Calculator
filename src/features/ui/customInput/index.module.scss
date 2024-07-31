@@ -1,0 +1,11 @@
+.root {
+  position: relative;
+  border-radius: 5px;
+  background-color: #f3f9fa;
+
+  &_label {
+    font-size: 24px;
+    font-weight: 700;
+    color: #547878;
+  }
+}

@@ -6,6 +6,9 @@ import path from "path";
 export default defineConfig(() => {
   return {
     plugins: [react()],
+    server: {
+      port: 3000,
+    },
     resolve: {
       alias: {
         "@assets": path.resolve(__dirname, "src/assets"),
