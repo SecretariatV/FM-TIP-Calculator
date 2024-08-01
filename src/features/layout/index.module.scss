@@ -1,3 +1,5 @@
+@use "@styles/globalStyles.scss" as G;
+
 .root {
   border-radius: 25px;
   width: 920px;
@@ -7,6 +9,16 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 48px;
+
+  @include G.breakpoint("md") {
+    width: 500px;
+    grid-template-columns: 1fr;
+  }
+
+  @include G.breakpoint("xm") {
+    width: 310px;
+    grid-template-columns: 1fr;
+  }
 
   &_none {
     display: none;
@@ -25,6 +37,11 @@
     display: grid;
     grid-template-rows: 1fr auto;
     height: 337px;
+
+    @include G.breakpoint("xm") {
+      padding: 24px;
+      height: 220px;
+    }
 
     &_grid {
       display: flex;

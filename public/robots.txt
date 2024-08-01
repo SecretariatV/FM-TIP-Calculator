@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+User-agent: Googlebot
+Crawl-delay: 10
+
+Disallow: /private/
+Disallow: /tmp/
+
+Sitemap: https://secretariatv.github.io/FM-TIP-Calculator/sitemap.xml

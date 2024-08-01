@@ -52,7 +52,7 @@ const TipPanel: FC<IProps> = ({ data, setData }) => {
             ari-label={`Tip ${button.value}%`}
           />
         ))}
-        <CustomInput />
+        <CustomInput data={data} setData={setData} />
       </div>
     </div>
   );
