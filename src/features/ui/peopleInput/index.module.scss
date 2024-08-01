@@ -1,36 +1,49 @@
-.bill {
+.root {
   display: flex;
   flex-direction: column;
   gap: 6px;
 
   &_label {
-    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &_error {
+      color: #e17457;
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+
+  &_title {
     font-size: 16px;
+    font-weight: 700;
     color: #5e7a7d;
   }
 
   &_input {
-    height: 32px;
     border-radius: 5px;
     background-color: #f3f9fa;
+    padding: 0 17px;
     display: grid;
     grid-template-columns: auto 1fr;
-    padding: 6px 17px;
     align-items: center;
+    height: 44px;
     border: 2px solid transparent;
+    transition: border ease-in-out 0.3s;
 
-    &:has(input[name="bill"]:focus) {
-      border: 2px solid #26c2ae;
+    &.active {
+      border: 2px solid #e17052;
     }
 
     input {
       border: 0;
       outline: none;
       background: transparent;
+      direction: rtl;
       font-size: 24px;
       font-weight: 700;
       color: #00474b;
-      direction: rtl;
 
       &::-webkit-outer-spin-button,
       &::-webkit-inner-spin-button {

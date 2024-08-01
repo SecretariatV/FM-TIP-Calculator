@@ -1,0 +1,31 @@
+.root {
+  display: grid;
+  grid-template-areas: "title amount" "detail amount";
+  align-items: center;
+  grid-template-columns: 1fr auto;
+
+  &_title {
+    grid-area: title;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    line-height: 24px;
+  }
+
+  &_detail {
+    grid-area: detail;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19px;
+    color: #7f9d9f;
+  }
+
+  &_amount {
+    grid-area: amount;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 71px;
+    color: #26c2ae;
+    letter-spacing: -1px;
+  }
+}

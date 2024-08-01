@@ -8,6 +8,10 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 48px;
 
+  &_none {
+    display: none;
+  }
+
   &_control {
     display: flex;
     flex-direction: column;
@@ -20,5 +24,37 @@
     padding: 40px;
     display: grid;
     grid-template-rows: 1fr auto;
+    height: 337px;
+
+    &_grid {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
+
+  &_reset {
+    outline: none;
+    width: 100%;
+    height: 48px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0;
+    transition: all ease-in-out 0.3s;
+
+    background-color: #0d686d;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    color: #00474b;
+
+    &.active {
+      background-color: #26c2ae;
+
+      &:hover {
+        background-color: #9fe8df;
+      }
+    }
   }
 }

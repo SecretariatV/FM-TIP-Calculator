@@ -1,6 +1,12 @@
-import { TipButton } from "@features/ui";
+import { CustomInput, TipButton } from "@features/ui";
 import S from "./index.module.scss";
-import { useState } from "react";
+import { Dispatch, FC, SetStateAction } from "react";
+import { ITipDataProps } from "..";
+
+interface IProps {
+  data: ITipDataProps;
+  setData: Dispatch<SetStateAction<ITipDataProps>>;
+}
 
 export const buttons = [
   {
@@ -25,8 +31,10 @@ export const buttons = [
   },
 ];
 
-const TipPanel = () => {
-  const [tip, setTip] = useState<number>(0);
+const TipPanel: FC<IProps> = ({ data, setData }) => {
+  const handleChange = (tip: number) => {
+    setData((prevData) => ({ ...prevData, tip: tip }));
+  };
 
   return (
     <div className={S.root} aria-labelledby="tip-title">
@@ -39,8 +47,8 @@ const TipPanel = () => {
             key={index}
             title={button.title}
             value={button.value}
-            active={button.value === tip}
-            setValue={setTip}
+            active={button.value === data.tip}
+            setValue={handleChange}
             ari-label={`Tip ${button.value}%`}
           />
         ))}

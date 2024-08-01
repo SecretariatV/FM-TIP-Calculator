@@ -7,13 +7,14 @@ export default defineConfig(() => {
   return {
     plugins: [react()],
     server: {
-      port: 3000,
+      port: 5000,
+      host: "0.0.0.0",
     },
     resolve: {
       alias: {
-        "@assets": path.resolve(__dirname, "src/assets"),
-        "@features": path.resolve(__dirname, "src/features"),
-        "@styles": path.resolve(__dirname, "src/styles"),
+        "@assets": "/src/assets",
+        "@features": "/src/features",
+        "@styles": "/src/styles",
       },
     },
     test: {
