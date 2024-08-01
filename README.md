@@ -1,30 +1,56 @@
-# React + TypeScript + Vite
+# Frontend Mentor - Tip Calculator app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Design preview for the Tip calculator app coding challenge](./public/desktop-preview.jpg)
 
-Currently, two official plugins are available:
+This is a solution to the [Tip calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of contents
 
-## Expanding the ESLint configuration
+- [Frontend Mentor - Tip Calculator app](#frontend-mentor---tip-calculator-app)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+  - [Author](#author)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Overview
 
-- Configure the top-level `parserOptions` property like this:
+### The challenge
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Users should be able to:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- View the optimal layout for the app depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Calculate the correct tip and total cost of the bill per person
+- Implement unit tests for all components
+- Implement asseccibility for all tags
+- Implement SEO for project
+
+### Screenshot
+
+![](./public/screenshot.jpg)
+
+### Links
+
+- Solution URL: [solution URL](https://github.com/SecretariatV/FM-TIP-Calculator)
+- Live Site URL: [live site URL](https://secretariatv.github.io/FM-TIP-Calculator)
+
+## My process
+
+### Built with
+
+- [React](https://reactjs.org/) - JS library
+- [Next.js](https://nextjs.org/) - React framework
+- [Styled Components](https://styled-components.com/) - For styles
+- [SCSS]
+- [Vitest]
+- [Jest]
+
+## Author
+
+- Website - [Oliver Boucher](https://ovb-portfolio.vercel.app/)
+- Frontend Mentor - [@SecretariatV](https://www.frontendmentor.io/profile/SecretariatV)
+- Twitter - [@ovb_coder](https://www.twitter.com/ovb_coder)
