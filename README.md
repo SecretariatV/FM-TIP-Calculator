@@ -14,7 +14,6 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
     - [Links](#links)
   - [My process](#my-process)
     - [Built with](#built-with)
-  - [Author](#author)
 
 ## Overview
 
@@ -48,9 +47,3 @@ Users should be able to:
 - [SCSS]
 - [Vitest]
 - [Jest]
-
-## Author
-
-- Website - [Oliver Boucher](https://ovb-portfolio.vercel.app/)
-- Frontend Mentor - [@SecretariatV](https://www.frontendmentor.io/profile/SecretariatV)
-- Twitter - [@ovb_coder](https://www.twitter.com/ovb_coder)
